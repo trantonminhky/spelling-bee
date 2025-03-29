@@ -21,9 +21,12 @@ say.getInstalledVoices((err, h) => {
 	console.log(h);
 });
 console.log(randomWord);
+/*
 say.export(`Your next word is... ${randomWord}`, "Microsoft David Desktop", 0.85, "test.wav", err => {
 	if (err) console.error(err);
 });
+*/
+say.speak(`Your next word is... ${randomWord}`, "Microsoft David Desktop", 0.85);
 
 // reinsert
 currentEncounterArray.push(randomWord);
